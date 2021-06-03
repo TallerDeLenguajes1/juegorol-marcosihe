@@ -28,6 +28,7 @@ namespace Personajes
         public int age { get => ; set => age = value} // se debe considerar TimeSpan para calcular la edad
         public int Health { get => health; set => health = value} //Su seteo depende de acciones o métodos
 
+        // Constructor inicial
         public Personaje(){
             velocidad = 1;
             destreza = 1;
@@ -37,6 +38,7 @@ namespace Personajes
             health = 100;
         }
 
+        // Constructor parametrizado
         public Caracteristicas(int velocidad, int destreza, int destreza, int nivel){
             this.velocidad = velocidad;
             this.destreza = destreza;
@@ -44,6 +46,17 @@ namespace Personajes
             this.nivel = nivel;
             this.age = age;
             this.health = health;
-        }   
-    
+        }
+    }
+
+    public enum TipoPersonaje
+    {
+        Humano = 0,
+        Horco = 1,
+        Enano = 2,
+        Caballero = 3,
+        Elfo = 4,
+        Brujo = 5
+    }
+
 }
