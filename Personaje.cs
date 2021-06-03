@@ -39,7 +39,7 @@ namespace Personajes
         }
 
         // Constructor parametrizado
-        public Caracteristicas(int velocidad, int destreza, int destreza, int nivel){
+        public Caracteristicas(int velocidad, int destreza, int destreza, int nivel, int age, int health){
             this.velocidad = velocidad;
             this.destreza = destreza;
             this.fuerza = fuerza;
@@ -47,6 +47,11 @@ namespace Personajes
             this.age = age;
             this.health = health;
         }
+
+        public int destreza(){
+            return (destreza + age*5);
+        }
+
     }
 
     public enum TipoPersonaje

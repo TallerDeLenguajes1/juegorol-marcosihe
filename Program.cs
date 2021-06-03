@@ -1,4 +1,5 @@
 ﻿using System;
+using Personajes;
 
 namespace juegorol_marcosihe
 {
@@ -6,7 +7,7 @@ namespace juegorol_marcosihe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Personaje personaje = new Personaje();
         }
     }
 }
